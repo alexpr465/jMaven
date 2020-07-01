@@ -9,7 +9,7 @@ pipeline {
 		checkout scm
 		
 		sh 'echo Limpiar Maven'
-		mvn clean
+		sh 'mvn clean install'
       }
     }
 

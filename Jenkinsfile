@@ -7,6 +7,9 @@ pipeline {
 
 		sh 'rm -rf *'
 		checkout scm
+		
+		sh 'echo Limpiar Maven'
+		mvn clean
       }
     }
 

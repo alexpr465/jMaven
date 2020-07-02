@@ -8,8 +8,15 @@ pipeline {
 		sh 'rm -rf *'
 		checkout scm
 		
-		sh 'echo Limpiar Maven'
+		sh 'echo Limpiar  Maven'
+		sh 'mvn clean'
+		
+		sh 'echo Compilar  Maven'
 		sh 'mvn compile'
+		
+		sh 'echo Empaquetar Maven'
+		sh 'mvn package'
+		
       }
     }
 
